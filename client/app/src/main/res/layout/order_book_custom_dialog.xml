@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="سفارش کتاب"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/editBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:hint="نام کتاب (مثال مدیر مدرسه)"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        />
+    <EditText
+        android:id="@+id/editNevisande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:hint="نام نویسنده (مثال جلال آل احمد)"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        />
+    <EditText
+        android:id="@+id/editEntesharat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:hint="نام انتشارات (اختیاری)"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        />
+    <EditText
+        android:id="@+id/editISBN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:hint="ISBN یا شابک (اختیاری)"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        />
+    <EditText
+        android:id="@+id/editCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:inputType="number"
+        android:layout_marginLeft="4dp"
+        android:hint="تعداد مورد نیاز"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        />
+    <LinearLayout
+        android:background="@drawable/blue_border_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Spinner
+
+            android:id="@+id/addressSpinner"
+            android:layout_width="0dp"
+            android:layout_weight=".6"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000000" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:gravity="center"
+            android:text="انتخاب آدرس"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ثبت سفارش"
+        android:id="@+id/button3"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cl_snappingstepper_button_normal">#71c1ca</color>
+    <color name="cl_snappingstepper_button_press">#c82abcba</color>
+    <color name="cl_snappingstepper_text_bg">#f1efef</color>
+    <color name="cl_snappingstepper_text">#00b1c7</color>
+</resources>

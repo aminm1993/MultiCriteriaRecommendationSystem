@@ -1,0 +1,248 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/rootview"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt_success_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="63dp"
+                android:gravity="center"
+
+                android:text="عضویت در اسگاد"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtname_reg"
+                android:layout_alignRight="@+id/txtname_reg"
+                android:layout_below="@+id/txt_success_name"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="بعد از عضویت به صفحه اصلی برنامه انتقال خواهید یافت"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtname_reg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_border_button_inside_white"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:hint="نام خود را وارد کنید"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/txtemail_reg"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#a1a1a1"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtemail_reg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_border_button_inside_white"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:hint="ایمیل (اختیاری)"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:nextFocusDown="@+id/txtmobile_reg"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#a1a1a1"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtmobile_reg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_border_button_inside_white"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:hint="شماره موبایل"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:nextFocusDown="@+id/txt_moarref"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#a1a1a1"
+                android:textStyle="bold"
+
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/txt_moarref"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_border_button_inside_white"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:hint="کد معرف (اختیاری)"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/txt_birthday"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#a1a1a1"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_border_button_inside_white"
+                android:orientation="horizontal">
+
+                <ir.smartlab.persiandatepicker.PersianDatePicker
+                    android:id="@+id/datepicker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+
+                    app:maxYear="1385"
+                    app:minYear="1320" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="تاریخ تولد" />
+
+            </LinearLayout>
+
+
+            <io.ghyeok.stickyswitch.widget.StickySwitch
+                android:id="@+id/sticky_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                app:ss_animationDuration="600"
+
+                app:ss_animationType="line"
+                app:ss_iconPadding="3dp"
+                app:ss_iconSize="40dp"
+                app:ss_leftIcon="@drawable/male"
+                app:ss_leftText="مرد"
+                app:ss_rightIcon="@drawable/female"
+                app:ss_rightText="زن"
+                app:ss_selectedTextSize="14sp"
+                app:ss_sliderBackgroundColor="@color/colorSliderBackground"
+                app:ss_switchColor="@color/colorSwitchColor"
+                app:ss_textColor="@color/colorTextColor"
+                app:ss_textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/radiogrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_birthday"
+                android:layout_alignRight="@+id/txt_birthday"
+                android:layout_below="@+id/txt_birthday"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="آقا"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/colorPrimaryDark"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="خانم"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight=".2" />
+
+                <Button
+                    android:id="@+id/btn_reg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/blue_border_button_inside_blue2"
+                    android:gravity="center"
+                    android:text="ثبت"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight=".2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

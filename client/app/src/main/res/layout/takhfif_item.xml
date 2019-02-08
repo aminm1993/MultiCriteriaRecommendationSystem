@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#3f4662"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="آدرس"
+            android:id="@+id/name"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/linearLayout"
+    android:id="@+id/linearLayout2"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:layout_height="wrap_content">
+
+    <TextView
+    android:textSize="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="آدرس : "
+    android:id="@+id/name2"
+    android:gravity="right"
+    android:layout_below="@+id/linearLayout" />
+    <TextView
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="آدرس : "
+        android:id="@+id/name3"
+        android:gravity="right"
+        android:layout_below="@+id/linearLayout" />
+    <TextView
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="آدرس : "
+        android:id="@+id/name4"
+        android:gravity="right"
+        android:layout_below="@+id/linearLayout" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/linearLayout2"
+        android:orientation="horizontal"
+        android:background="#3f4662"
+        android:gravity="center"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="انتخاب به عنوان مقصد"
+            android:id="@+id/choose"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

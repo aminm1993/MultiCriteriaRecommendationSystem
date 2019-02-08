@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="انتخاب زمان"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        />
+
+    <TextView
+        android:text="لطفا زمان مورد نظر خود را انتخاب کنید"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:id="@+id/title2"
+        android:gravity="center"
+        />
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/circle_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="انتخاب روز"
+        android:gravity="right"
+        android:layout_margin="3dp"
+        android:textColor="@color/colorPrimary"
+        android:padding="5dp"
+        android:id="@+id/choosedate"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:nestedScrollingEnabled="true"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lvTimes"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="انتخاب ساعت"
+        android:gravity="right"
+        android:layout_margin="3dp"
+        android:textColor="@color/colorPrimary"
+        android:padding="5dp"
+        android:id="@+id/choosetime"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:nestedScrollingEnabled="true"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lvTimes2"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="خروج"
+        android:id="@+id/button3"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/blue_border_button_inside_blue2"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="right"
+    android:layoutDirection="ltr"
+    tools:openDrawer="right"
+    tools:context=".ui.activity.SearchPlaceOnMapActivity"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/activity_search_place_on_map"/>
+
+    <android.support.design.widget.NavigationView
+        android:layoutDirection="rtl"
+        android:id="@+id/nav_view"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        app:itemIconTint="@color/colorPrimary"
+
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view"/>
+
+
+</android.support.v4.widget.DrawerLayout>

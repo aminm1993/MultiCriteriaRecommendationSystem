@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="70dp"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_alignParentRight="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/black_border_button"
+
+    android:id="@+id/linearLayout">
+     >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="امروز"
+        android:id="@+id/daytype"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <me.grantland.widget.AutofitTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="یک شنبه"
+        android:maxLines="1"
+        android:id="@+id/weekday"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        autofit:minTextSize="9sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="22"
+        android:textStyle="bold"
+        android:id="@+id/daynumber"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+    <me.grantland.widget.AutofitTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="آبان"
+        android:maxLines="1"
+        android:id="@+id/month"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:padding="2dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        autofit:minTextSize="12sp"
+        />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

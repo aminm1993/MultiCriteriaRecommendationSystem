@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/App.iml" filepath="$PROJECT_DIR$/App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carouselpicker/carouselpicker.iml" filepath="$PROJECT_DIR$/carouselpicker/carouselpicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fabulousfilter/fabulousfilter.iml" filepath="$PROJECT_DIR$/fabulousfilter/fabulousfilter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myslider/myslider2.iml" filepath="$PROJECT_DIR$/myslider/myslider2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/persiandatepicker/persiandatepicker.iml" filepath="$PROJECT_DIR$/persiandatepicker/persiandatepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snappingstepper/snappingstepper2.iml" filepath="$PROJECT_DIR$/snappingstepper/snappingstepper2.iml" />
+    </modules>
+  </component>
+</project>

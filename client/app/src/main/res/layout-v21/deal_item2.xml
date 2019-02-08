@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/border"
+    android:orientation="vertical"
+    android:layout_width="130dp"
+    android:layout_height="300dp"
+    android:layoutDirection="ltr"
+    android:padding="3dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:background="#dfdfdf"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/itemCard"
+
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+    <LinearLayout
+
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_gravity="center"
+            android:src="@drawable/appicon"
+            android:padding="18dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="3dp"
+            android:layout_height="130dp"
+            android:layout_width="130dp"/>
+
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:maxLines="2"
+            android:textSize="12sp"
+            autofit:minTextSize="9sp"
+            />
+
+        <TextView
+            android:id="@+id/unit"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="unit"
+            />
+
+        <TextView
+            android:id="@+id/item_price"
+            android:fontFamily="sans-serif-regular"
+            android:layout_width="fill_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="#2c9f60"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/layout2"
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bebebe"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/itemCard2"
+            android:layout_height="50dp"
+            android:layout_gravity="center">
+
+        <TextView
+            android:background="@drawable/ripple_effect"
+            android:id="@+id/item_price_strike"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_height="match_parent"
+            android:text="سفارش"
+            android:gravity="center" />
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/counterCartView"
+            android:visibility="gone"
+            android:layout_height="50dp"
+            autofit:cardBackgroundColor="@color/colorPrimary"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/manfi"
+                    android:background="@drawable/ripple_effect"
+                    android:padding="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:src="@drawable/negative"
+                    android:layout_height="50dp"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/count"
+                    android:padding="5dp"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="1"
+                    />
+
+                <ImageView
+                    android:padding="10dp"
+                    android:background="@drawable/ripple_effect"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/mosbat"
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:src="@drawable/positive"
+                    android:layout_height="50dp" />
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

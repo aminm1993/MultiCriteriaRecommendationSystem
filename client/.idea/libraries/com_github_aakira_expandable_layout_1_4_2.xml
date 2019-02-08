@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.aakira:expandable-layout-1.4.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expandable-layout-1.4.2.aar/d305e7e7fc85c09b1f73ad81ec5d5d1b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expandable-layout-1.4.2.aar/d305e7e7fc85c09b1f73ad81ec5d5d1b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.aakira/expandable-layout/1.4.2/4588a646960b82e38c0ab609a2b223050769e91a/expandable-layout-1.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

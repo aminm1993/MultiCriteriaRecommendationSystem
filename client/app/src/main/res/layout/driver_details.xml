@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/minimize"
+            android:layout_width="50dp"
+            android:id="@+id/minimize"
+            android:elevation="5dp"
+            android:padding="3dp"
+            android:layout_margin="3dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:id="@+id/chat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/chat_icon" />
+    </LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/ll_map_item2"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    xmlns:autofit="http://schemas.android.com/tools"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#f4f4f4"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:background="#f4f4f4"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+
+            <include android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+                layout="@layout/pelak_details"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:id="@+id/txtCarName"
+                    android:textColor="#202020"
+                    android:text="پژو 405 نقره ای"
+                    android:padding="2dp"
+                    android:layout_alignTop="@+id/txtPelak"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:textSize="13sp"
+                    autofit:minTextSize="8sp"
+                    />
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:text="خودرو : "
+                    android:padding="2dp"
+                    android:layout_alignTop="@+id/txtPelak"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    autofit:minTextSize="8sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+
+                    android:id="@+id/txtTransferPrice"
+                    android:textColor="#0a9732"
+                    android:text="450000000000000 ریال"
+                    android:padding="2dp"
+                    android:gravity="right|center_vertical"
+                    android:maxLines="1"
+                    android:textSize="17sp"
+                    autofit:minTextSize="8sp"
+                    />
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:text="هزینه : "
+                    android:padding="2dp"
+                    android:layout_alignTop="@+id/txtPelak"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    autofit:minTextSize="8sp"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/more_items"
+                android:layout_width="30dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="left"
+                android:src="@drawable/dots"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#717171"
+
+            android:layerType="software" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/user_profile_photo"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/applogo"
+                android:elevation="4dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:id="@+id/txtName"
+                    android:textColor="#202020"
+                    android:text="علی حسنی"
+                    android:padding="2dp"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:textSize="13sp"
+                    autofit:minTextSize="8sp"
+                    />
+                <me.grantland.widget.AutofitTextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".4"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:text="راننده : "
+                    android:padding="2dp"
+                    android:layout_alignTop="@+id/txtPelak"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textSize="16sp"
+                    autofit:minTextSize="8sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/payment_transfer_layout"
+            android:orientation="horizontal"
+            android:layout_weight=".5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/blue_border_button_inside_blue_without_raduis"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="3dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="پرداخت اعتباری"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="20dp"
+                android:src="@drawable/payment"
+
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#717171"
+
+            android:layerType="software" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/call_driver_layout"
+            android:orientation="horizontal"
+            android:layout_weight=".5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/blue_border_button_inside_blue_without_raduis"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="3dp"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="تماس با راننده"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="20dp"
+                android:src="@drawable/call"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_pay"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:clickable="true"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.45"
+            android:background="@drawable/blue_border_button_inside_blue2"
+            android:text="پرداخت هزینه آنلاین"
+            android:textColor="@color/white"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_call"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:clickable="true"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.45"
+            android:background="@drawable/blue_border_button_inside_blue2"
+            android:text="تماس با راننده"
+            android:textColor="@color/white"
+
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ir.mohammadpour.app.ui.util.SlideView
+        android:layout_width="match_parent"
+        android:id="@+id/slidercancel"
+        android:layout_margin="5dp"
+        app:buttonBackgroundColor="#fff"
+        app:reverseSlide="true"
+        app:buttonImage="@drawable/ic_chevron_double_right_pink"
+        app:slideBackgroundColor="@color/colorAccent"
+        app:slideText="لغو سفر"
+        android:layout_height="wrap_content"
+ />
+</LinearLayout>
+</LinearLayout>

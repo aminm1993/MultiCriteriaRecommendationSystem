@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/blue_border_button"
+        android:gravity="left"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+
+            android:id="@+id/editMsg"
+            android:hint="نوشتن پیام متنی"
+            android:padding="10dp"
+            android:gravity="left|center_vertical"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight=".95"
+            android:layout_marginRight="40dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_weight=".05"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_play_light"
+            android:layout_centerVertical="true" />
+
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="40dp"
+        android:padding="6dp"
+
+        android:layout_margin="5dp"
+        android:id="@+id/record"
+        android:visibility="gone"
+        android:background="@drawable/off"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

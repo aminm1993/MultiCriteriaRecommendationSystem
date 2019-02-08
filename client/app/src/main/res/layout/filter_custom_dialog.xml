@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layoutDirection="ltr"
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/blue_border_button_inside_blue2"
+    android:id="@+id/relative1">
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/layout_border"
+        android:layout_below="@+id/linearLayout"
+        android:drawableRight="@drawable/sevomi"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/sevomi"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/imgspinner3"
+            android:layout_height="match_parent"
+            android:layout_width="50dp">
+        </ImageView>
+        <Spinner
+            android:id="@+id/spinnerbrand"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/spinner_border"
+            android:layout_gravity="center"
+            android:popupBackground="#ffffff"
+            android:paddingLeft="25dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="انتخاب دسته بندی"
+            android:layout_toLeftOf="@+id/imgspinner3"
+            android:layout_toStartOf="@+id/imgspinner3" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/layout_border"
+        android:layout_below="@+id/layout3"
+        android:drawableRight="@drawable/charomi"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:src="@drawable/charomi"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/imgspinner4"
+            android:layout_height="match_parent"
+            android:layout_width="50dp">
+        </ImageView>
+        <EditText
+            android:id="@+id/etName"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/spinner_border"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="25dp"
+            android:hint="نام سرویس"
+            android:textColorHint="#7c9796"
+            android:inputType="textCapCharacters"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/imgspinner4"
+            android:layout_toStartOf="@+id/imgspinner4"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_height="50dp"
+        android:background="@drawable/search_burron_border"
+
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:text="فیلتر کردن"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_below="@+id/layout4"
+        />
+
+</RelativeLayout>

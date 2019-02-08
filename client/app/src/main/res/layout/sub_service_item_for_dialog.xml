@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:id="@+id/itemCard"
+    android:padding="5dp"
+    autofit:cardElevation="3dp"
+    xmlns:stepper="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+>
+
+
+<LinearLayout
+    android:padding="2dp"
+    android:layout_width="0dp"
+    android:layout_weight=".93"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+
+    android:id="@+id/relative">
+
+
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/txtSub"
+        android:layout_width="match_parent"
+        android:text="0 ریال"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="#64afc9"
+        android:padding="2dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/stepperCustom"
+        android:layout_alignParentRight="true"
+        autofit:minTextSize="9sp"
+        />
+
+
+    <com.bigkoo.snappingstepper.SnappingStepper
+        android:id="@+id/stepperCustom"
+        stepper:max="200"
+        stepper:min="0"
+        stepper:step="1"
+        stepper:value="0"
+        android:layout_width="110dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        stepper:stepper_contentTextSize="18"
+        android:layout_centerVertical="true" />
+
+</LinearLayout>
+
+    <ImageView
+        android:layout_weight=".07"
+        android:id="@+id/img"
+        android:padding="10dp"
+
+        android:layout_gravity="center"
+        android:src="@drawable/appicon"
+        android:layout_width="90dp"
+        android:layout_height="90dp" />
+</LinearLayout>
+</android.support.v7.widget.CardView>

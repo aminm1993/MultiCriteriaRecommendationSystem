@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ir.mohammadpour.app">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="27"
+        tools:overrideLibrary="com.airbnb.android.airmapview" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name=".permission.RECEIVE" />
+    <uses-permission android:name="ir.mohammadpour.app.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <permission
+        android:name="ir.mohammadpour.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <meta-data
+        android:name="AA_DB_NAME"
+        android:value="Passenger3.db" />
+    <meta-data
+        android:name="AA_DB_VERSION"
+        android:value="5" />
+
+    <application
+        android:name=".ui.activity.App"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl,android:icon">
+
+        <activity android:name=".ui.activity.MainActivity" android:screenOrientation="portrait"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+
+        <!--
+                         <meta-data
+                         android:name="com.google.android.geo.API_KEY"
+                         android:value="AIzaSyAR-VGL8S2hNV6w_SM6Ah6pPIpxy7Xa7xA" />
+        -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBWDGbs1KkxDOQh3w4LMj4qKIsMd6Ak530" />
+
+        <activity
+            android:name=".ui.activity.MapsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ui.activity.SearchPlaceOnMapActivity"
+            android:layoutDirection="ltr"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.ListViewActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.RestaurantActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.MessagesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.WaitingActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.ForgetPassActivity" />
+        <!--
+                <receiver
+                    android:name=".GcmBroadcastReceiver"
+                    android:permission="com.google.android.c2dm.permission.SEND" >
+                    <intent-filter>
+                        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                        <category android:name="" />
+                    </intent-filter>
+
+                </receiver>
+                <service android:name=".GcmIntentService" />
+        -->
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <receiver android:name=".ui.util.IncomingSms">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".ui.activity.MyInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".ui.activity.MyFcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".ui.activity.TransferService"
+            android:enabled="true" />
+
+        <activity android:name=".ui.activity.CurrentTransferActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.LoginActivity" android:screenOrientation="portrait" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.activity.RegisterActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".ui.activity.ActiveActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.CommentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.HistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.DetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.IncreaseEtebarActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.GozinehaActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ShareAppActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.TestActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.SelectedLocationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ChooseLocationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ChatActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.TakhfifLocationActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.activity.ServicesActivity"
+            android:layoutDirection="ltr"
+            android:theme="@style/CustomTheme" />
+        <activity android:name=".ui.activity.SubServiceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.Service2Activity" android:screenOrientation="portrait" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.activity.GetOrderTimeAndAddressActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.activity.OrderActivity"
+            android:theme="@style/CustomTheme" />
+        <activity android:name=".ui.activity.TimeListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.RequestTaxiActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ShopListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.BackupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.activity.TransactionsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.AboutActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

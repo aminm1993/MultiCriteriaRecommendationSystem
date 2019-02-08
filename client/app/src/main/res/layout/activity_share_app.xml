@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ir.mohammadpour.app.ui.activity.ShareAppActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:text="با ارسال اسگاد به دوستان و آشنایان خود و دریافت اولین سفر توسط آنها ، از ما اعتبار هدیه دریافت کنید"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv2"
+        android:text="code"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:text="کد خود را به اشتراک بگذارید"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/lv"
+        android:numColumns="3"
+        android:layout_below="@+id/tv3"
+        android:layout_height="fill_parent"></GridView>
+
+</RelativeLayout>

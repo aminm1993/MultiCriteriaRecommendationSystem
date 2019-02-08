@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:background="#44a9a9a9"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:theme="@style/AppTheme.WhiteAccent"
+        android:id="@+id/change_progress"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_height="30dp"
+        android:indeterminate="true" />
+    <TextView
+        android:text="تغییر در سفر"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:id="@+id/title"
+        android:gravity="center"
+        />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn0"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:alpha="1"
+        android:background="@drawable/transparent_background_with_raduis"
+        android:clickable="false">
+        <TextView
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="تغییر مقصد از مکان فعلی "
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_weight=".2"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:src="@drawable/first_loc1"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:alpha="1"
+        android:background="@drawable/transparent_background_with_raduis"
+        android:clickable="false">
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="تغییر مقصد دوم"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_weight=".2"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:src="@drawable/sec_dest_icon1"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:alpha="1"
+        android:background="@drawable/transparent_background_with_raduis"
+        android:clickable="false">
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="رفت و برگشت به مبدا"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_weight=".2"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:src="@drawable/arrows1"
+            android:layout_height="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:alpha="1"
+        android:background="@drawable/transparent_background_with_raduis"
+        android:clickable="false">
+
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="مجموع توقف در مسیر"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_weight=".2"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:src="@drawable/time1"
+            android:layout_height="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn4"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:alpha="1"
+        android:background="@drawable/transparent_background_with_raduis"
+        android:clickable="false">
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="مجموع بار"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_weight=".2"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:src="@drawable/bar1"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:layout_marginBottom="4dp"
+    android:orientation="horizontal"
+    android:layout_height="50dp">
+
+    <me.grantland.widget.AutofitTextView
+        android:layout_width="0dp"
+        android:layout_weight=".7"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:id="@+id/change_price"
+
+        android:text="50000 تومان"
+        android:textColor="@color/colorPrimary"
+        android:padding="2dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        autofit:minTextSize="8sp"
+        />
+    <me.grantland.widget.AutofitTextView
+        android:layout_width="0dp"
+        android:layout_weight=".3"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:id="@+id/txtName"
+        android:textColor="#202020"
+        android:text="قیمت حدودی : "
+        android:padding="2dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="13sp"
+        autofit:minTextSize="8sp"
+        />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@drawable/blue_border_button_inside_blue_without_raduis"
+        android:text="ثبت تغییر"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

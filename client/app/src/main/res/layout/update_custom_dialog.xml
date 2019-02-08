@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="نسخه جدید برنامه در دسترس است"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:background="#00b1c7"
+        />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <com.github.lzyzsd.circleprogress.CircleProgress
+        android:id="@+id/circle_progress"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        custom:circle_progress="0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="به روز رسانی"
+        android:id="@+id/button3"
+        android:textColor="#ffffff"
+        android:background="#00b1c7"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

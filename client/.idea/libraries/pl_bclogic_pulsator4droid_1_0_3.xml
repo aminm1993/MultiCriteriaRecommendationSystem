@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="pl.bclogic:pulsator4droid-1.0.3">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pulsator4droid-1.0.3.aar/49835a7b83693424316ab6778c76c131/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pulsator4droid-1.0.3.aar/49835a7b83693424316ab6778c76c131/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.bclogic/pulsator4droid/1.0.3/2a6fee9b6411f7832259675e63c77ca64a520d98/pulsator4droid-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootview"
+    android:layoutDirection="ltr"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ثبت کد تایید"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:id="@+id/textView"
+
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:layout_margin="20dp"
+            android:text="لطفا کد ارسال شده را جهت تایید شماره همراه وارد کنید"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView2"
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="کد فعال سازی برای شما پیامک خواهد شد"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:id="@+id/txtcode"
+            android:background="@drawable/white_border_button_inside_white"
+            android:singleLine="true"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:hint="کدفعال سازی"
+            android:textColorHint="#a1a1a1"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp" />
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".2"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_border_button_inside_blue2"
+                android:textColor="@android:color/white"
+                android:text="ثبت"
+                android:layout_weight=".6"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="25sp"
+                android:id="@+id/btnactive"
+                android:layout_centerHorizontal="true" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".2"/>
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ارسال مجدد کد؟"
+            android:id="@+id/btnretry"
+            android:textColor="#ffffff"
+            android:layout_marginTop="22dp"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="شرکت ایده پردازان آیدین فردا "
+        android:textColor="#FFFFFF"
+        android:alpha="0.6"
+        android:id="@+id/textView4"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="41dp"
+        />
+
+
+
+</RelativeLayout>

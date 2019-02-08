@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_collapseMode="pin" >
+
+
+
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:textColor="#ffffff"
+                android:text="فروشگاه های طرف قرارداد"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:maxLines="1"
+                android:textSize="17sp"
+                autofit:minTextSize="9sp"
+                />
+
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <GridView
+        android:animateLayoutChanges="true"
+
+        android:layout_height="match_parent"
+        android:id="@+id/lv"
+        android:padding="5dp"
+        android:numColumns="2"
+        android:dividerHeight="15dp"
+        android:divider="@android:color/transparent"
+        android:stretchMode="columnWidth"
+        android:background="#cccccc"
+        android:horizontalSpacing="6dp"
+        android:verticalSpacing="6dp"
+
+        android:layout_width="match_parent"/>
+
+</LinearLayout>

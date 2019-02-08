@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:id="@+id/itemCard"
+    android:layout_height="300dp"
+    android:layoutDirection="ltr"
+    android:layout_margin="3dp"
+    android:layout_marginTop="15dp"
+    android:paddingTop="10dp"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/border"
+    android:background="@drawable/kala_item_border"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_weight="85"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_gravity="center"
+            android:src="@drawable/appicon"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="3dp"
+            android:layout_height="95dp"
+            android:layout_width="95dp"/>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/layout2"
+            android:layout_margin="6dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#d7d9d4"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_weight="15"
+            android:layout_margin="6dp"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:tileMode="repeat"
+            >
+
+
+        <TextView
+            android:id="@+id/item_price_strike"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:gravity="center" />
+
+       
+   <TextView
+        android:id="@+id/item_price"
+        android:fontFamily="sans-serif-regular"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:textColor="#2c9f60"
+       android:gravity="center"
+       />
+
+
+
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="unit"
+        />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:tileMode="repeat"
+        >
+
+
+        <ImageView
+            android:id="@+id/mosbat"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/shoppingcartadd" />
+
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2c9f60"
+            android:text="0"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/manfi"
+            android:layout_marginLeft="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/shoppingcartremove"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>

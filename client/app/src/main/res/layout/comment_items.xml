@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_map_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/btn_cm1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:background="@drawable/blue_border_button"
+            android:clickable="false"
+            android:text="انتخاب مسیر نامناسب"
+            android:textColor="@color/gomalan_bule_bg"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/btn_cm2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:background="@drawable/blue_border_button"
+            android:clickable="false"
+            android:text="رفتار یا ظاهر نامناسب"
+            android:textColor="@color/gomalan_bule_bg"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_map_item2"
+        android:orientation="horizontal">
+
+
+        <Button
+
+            android:id="@+id/btn_cm3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:background="@drawable/blue_border_button"
+            android:clickable="false"
+            android:text="رانندگی نامناسب"
+            android:textColor="@color/gomalan_bule_bg"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/btn_cm4"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:background="@drawable/blue_border_button"
+            android:clickable="false"
+            android:text="شرایط نامناسب خودرو"
+            android:textColor="@color/gomalan_bule_bg"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_map_item3"
+        android:orientation="horizontal">
+
+
+        <Button
+
+            android:id="@+id/btn_cm5"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:background="@drawable/blue_border_button"
+            android:clickable="false"
+            android:text="دریافت هزینه اضافی"
+            android:textColor="@color/gomalan_bule_bg"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/btn_cm6"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:background="@drawable/blue_border_button"
+            android:clickable="false"
+            android:text="سرمایش/گرمایش خودرو"
+            android:textColor="@color/gomalan_bule_bg"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</LinearLayout>

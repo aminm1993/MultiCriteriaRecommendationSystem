@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@drawable/blue_border_button">
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:elevation="100dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.google.android.gms.maps.MapView
+
+                android:id="@+id/mapViewDetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/txtdarkhast"
+                android:layout_centerHorizontal="true" />
+            <View
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:background="#595757"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".55"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="darkhast"
+                    android:id="@+id/txtdarkhast"
+                    android:textSize="13dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".45"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="تاریخ درخواست : "
+                    android:id="@+id/txtdarkhast2"
+                    android:textColor="#30359b"
+                    android:foregroundGravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtMabda"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:gravity="center"
+                    android:text="مبدا : "
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".45"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="مبدا : "
+                    android:id="@+id/txtMabda2"
+                    android:textColor="#30359b"
+                    android:textStyle="bold"
+                    android:foregroundGravity="center"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".55"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="خیابان حسنی"
+                    android:id="@+id/txtMaghsad"
+                    android:textSize="13dp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".45"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="مقصد : "
+                    android:id="@+id/txtMaghsad2"
+                    android:textColor="#30359b"
+                    android:textStyle="bold"
+                    android:foregroundGravity="center"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/linearMaghsadDovvom"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".55"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="خیابان محراب"
+                    android:id="@+id/maghsadDovvom"
+                    android:textSize="13dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".45"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="مقصد دوم : "
+                    android:id="@+id/maghsadDovvom2"
+                    android:textColor="#30359b"
+                    android:textStyle="bold"
+                    android:foregroundGravity="center"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".55"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="دارد"
+                    android:id="@+id/txtRaftOBargasht"
+                    android:textSize="13dp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".45"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="رفت و برگشت : "
+                    android:id="@+id/txtRaftOBargasht2"
+                    android:textColor="#30359b"
+                    android:textStyle="bold"
+                    android:foregroundGravity="center"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".55"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="دارد"
+                    android:id="@+id/txtBar"
+                    android:textSize="13dp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".45"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="بار اضافی : "
+                    android:id="@+id/txtBar2"
+                    android:textColor="#30359b"
+                    android:textStyle="bold"
+                    android:foregroundGravity="center"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".55"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="20 دقیقه"
+                    android:id="@+id/txtTavaghof"
+                    android:textSize="13dp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".45"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="توقف در مسیر : "
+                    android:id="@+id/txtTavaghof2"
+                    android:textColor="#30359b"
+                    android:textStyle="bold"
+                    android:foregroundGravity="center"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".55"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="دارد"
+                    android:id="@+id/txtTakhfif"
+                    android:textSize="13dp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".45"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="کد تخفیف : "
+                    android:id="@+id/txtTakhfif2"
+                    android:textColor="#30359b"
+                    android:textStyle="bold"
+                    android:foregroundGravity="center"
+                    android:textSize="13dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".55"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="5000 ریال"
+                    android:id="@+id/txtGheymat"
+                    android:textSize="13dp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".45"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="قیمت : "
+                    android:id="@+id/txtGheymat2"
+                    android:textColor="#30359b"
+                    android:textStyle="bold"
+                    android:foregroundGravity="center"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

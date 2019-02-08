@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:background="@drawable/blue_border_button2"
+    android:id="@+id/rlLayout"
+    android:gravity="right"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:layout_gravity="right"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <TextView
+                        android:id="@+id/service_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="واحد"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/service_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="مبلغ پرداختی"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/service_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="نام کالا"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                </LinearLayout>
+
+

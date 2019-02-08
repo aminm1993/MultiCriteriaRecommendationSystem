@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="آدرس جدید"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+
+        android:layout_marginLeft="4dp"
+        android:hint="نام آدرس (مثل خونه،شرکت)"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        />
+    <EditText
+        android:id="@+id/editdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:hint="جزئیات آدرس جهت مسیریابی بهتر"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ثبت آدرس"
+        android:id="@+id/button3"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/blue_border_button_inside_blue2"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

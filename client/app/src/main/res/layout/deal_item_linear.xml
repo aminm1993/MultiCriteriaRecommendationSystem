@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCard"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:layout_marginTop="15dp"
+    android:paddingTop="10dp"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/border"
+    android:background="@drawable/kala_item_border"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_weight="80"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_gravity="right"
+            android:scaleType="centerCrop"
+            android:padding="8dp"
+            android:src="@drawable/appicon"
+            android:layout_margin="10dp"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/item_name"
+            android:layout_width="296dp"
+
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/item_image"
+            android:layout_toStartOf="@+id/item_image"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:gravity="right"
+            android:text="test"
+            android:maxLines="2"
+            android:textSize="14sp"
+            autofit:minTextSize="9sp"
+            />
+
+        <TextView
+             android:id="@+id/item_price"
+             android:fontFamily="sans-serif-regular"
+             android:layout_width="197dp"
+             android:layout_height="wrap_content"
+            android:textColor="#2c9f60"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="test"
+            android:layout_alignBottom="@+id/item_image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/item_image"
+            android:layout_toStartOf="@+id/item_image" />
+
+        <TextView
+            android:id="@+id/item_price_strike"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:layout_marginRight="10dp"
+            android:text="test"
+            android:gravity="right"
+            android:visibility="gone"
+            android:layout_above="@+id/item_price"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/item_image"
+            android:layout_toStartOf="@+id/item_image" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="unit"
+        />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#e6e0e0"
+        android:orientation="horizontal"
+        android:tileMode="repeat"
+        >
+
+
+        <ImageView
+            android:id="@+id/mosbat"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/shoppingcartadd" />
+
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2c9f60"
+            android:text="0"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/manfi"
+            android:layout_marginLeft="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/shoppingcartremove"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>

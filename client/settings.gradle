@@ -1,0 +1,3 @@
+include ':app', ':snappingstepper2', ':myslider2', ':carouselpicker', ':persiandatepicker', ':fabulousfilter'
+project(':snappingstepper2').projectDir = new File('snappingstepper')
+project(':myslider2').projectDir = new File('myslider')
